@@ -15,7 +15,7 @@ import java.io.UnsupportedEncodingException;
 public class GcsService {
 
     private static final String BUCKET_NAME = "ide-summit";
-    private static final String BLOB_NAME = "input.txt";
+    private static final String BLOB_NAME = "data/input.txt";
 
     String getBlobText() {
         Storage storage = StorageOptions.getDefaultInstance().getService();

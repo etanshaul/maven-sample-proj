@@ -37,8 +37,8 @@ public class IdeSummitDemoController {
     @GetMapping("/")
     public String demo(Map<String, Object> model) {
         model.put("time", new Date());
-        String blobText = gcsService.getBlobText();
-        model.put("message", blobText);
+//        String blobText = gcsService.getBlobText();
+        model.put("message", "hello world");
         return "index";
     }
 
